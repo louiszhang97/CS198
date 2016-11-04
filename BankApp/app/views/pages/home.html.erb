@@ -1,0 +1,10 @@
+<h1>Hello World!!!!!!</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+<%= form_for @user, url: users_path do |f| %> 
+	<h1> NAME </h1>
+	<%= f.input :name%>
+	<h1> IS ADMIN </h1> 
+	<%= f.check_box :is_admin %> 
+	<%= f.submit 'Submit me'%>
+<%end%> 
+
